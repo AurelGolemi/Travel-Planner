@@ -6,11 +6,16 @@
 }
 
 body {
-
   height: 100vh;
   width: 100%;
   background-image: url('Images/Travel-HD-Wallpaper.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #header {
@@ -64,8 +69,8 @@ body {
   color: #111;
   height: 100vh;
   width: 100%;
-  padding: 150px 100px;
-  background-color: rgba(0, 0, 0, 0.35);
+  padding: 70px 100px;
+  background: rgba(0, 0, 0, 0.45);
   /* background-image: url('Images/Travel-HD-Wallpaper.jpg');
   background-size: cover; */
 }
@@ -96,7 +101,67 @@ body {
   border-radius: 5px;
 }
 
-#home .container .home-content .btn a{
-  text-decoration: none;
-  color: #fff;
+#home .container .home-content .travel-location {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1200px;
+ 
 }
+
+#home .container .home-content .travel-location img {
+  width: 250px;
+  height: 170px;
+  padding: 15px;
+}
+
+#home .container .home-content .travel-location p {
+  padding: 10px 30px;
+  margin-top: -60px;
+  /* text-align: center; */
+  font-size: 18px;
+  /* color: #222; */
+  font-weight: 600;
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  padding: 150px 100px;
+  background: #1d1d1d;
+  color: #ddd;
+}
+
+#about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#about .container .about-content {
+  width: 90%;
+  max-width: 600px;
+  padding: 25px;
+}
+
+#about .container .about-content h1 {
+  font-size: 2.5rem;
+  padding: 12px 0;
+}
+
+#about .container .about-content p {
+  text-align: justify;
+  margin: 10px auto;
+}
+
+#about .container .about-content .btn {
+  background-color: #333;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+}
+
+#about .container img {
+  width: 500px;
+  height: 360px;
+}
+
